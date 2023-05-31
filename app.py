@@ -1,20 +1,22 @@
 import streamlit as st
-import os 
 import pandas as pd
-from datetime import datetime
-import tensorflow as tf
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-from PIL import Image #이미지 처리하는 라이브러리
+from app_home import run_app_home
+from app_eda import run_app_eda
+from app_ml import run_app_ml
 
 
+df = pd.read_csv('data/drug200.csv')
 
-import streamlit as st
+def main():
 
-def main():  #화면에 나타낼것
-    st.title('내 앱 대시보드') 
-
-
+    st.title('복용 약물 분석 앱')
+    menu = ['Home', 'EDA', 'ML']
+    choice = st.sidebar.selectbox('메뉴', menu)
+    if choice == menu[0]:
+        run_app_home()
+    elif choice == menu[1]:
+        run_app_eda()
+    else :
+        run_app_ml()
 if __name__ == '__main__':
     main()
