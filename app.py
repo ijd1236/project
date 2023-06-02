@@ -8,7 +8,6 @@ from app_ml import run_app_ml
 df = pd.read_csv('data/drug200.csv')
 
 def main():
-
     st.title('복용 약물 분석 앱')
     menu = ['Home', 'EDA', 'ML']
     choice = st.sidebar.selectbox('메뉴', menu)
