@@ -19,7 +19,7 @@ import streamlit as st
 df = pd.read_csv('data/drug200.csv')
 
 def run_app_eda():
-    if st.checkbox('데이터프레임 보이기'):
+    if st.checkbox('데이터프레임 보이기',  value=True):
         st.dataframe(df)
         st.text('Age = 나이, Sex = 성별, BP = 혈압, Cholesterol = 콜레스테롤, Na_to_K = 혈중 나트륨 대 칼륨 비율, Drug = 복용 약물')
     else:
