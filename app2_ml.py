@@ -26,7 +26,7 @@ def get_country_info(country_name):
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
-        if isinstance(data, list) and len(data) > 0:
+        if isinstance(data, list) and len(data) > 0: 
             return data[0]
     return None
 def get_country_info2(max_country):
@@ -220,7 +220,6 @@ def run_app_ml():
     good =  df3.sort_values(['GDP',  'GCI', 'CEI'], ascending=[False,True,True])
     good['Rank'] = range(1, len(good) + 1)
     good['Rank'] = good['Rank'].astype(str) + '위'
-    st.dataframe(good)
     st.subheader("국가 순위 검색하기")
     st.text("해당 순위는 GDP, DDP가 높으면서  CEI가 낮은순으로 책정되었습니다.")
     number = st.selectbox("원하는 순위를 입력하세요", good['Rank'])
