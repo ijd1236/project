@@ -54,7 +54,7 @@ def County():
                 st.write("국기 이미지를 찾을 수 없습니다.")
             region_value = df3.loc[df3['Country'] == country_name, 'Region'].values[0] 
             st.write(f"국가 이름: {country_info.get('name', '')}")
-            st.write(f"지역 : {int(region_value)}$")
+            st.write(f"지역 : {(region_value)}")
             st.write(f"수도: {country_info.get('capital', '')}")
             st.write(f"인구: {country_info.get('population', '')}")
             st.write(f"면적: {country_info.get('area', '')} km²")
