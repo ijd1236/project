@@ -11,6 +11,10 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 from matplotlib import font_manager, rc
+import matplotlib.pyplot as plt
+
+
+plt.rcParams['font.family'] = 'NanumGothic'
 
 
 def get_country_info(country_name):
@@ -181,7 +185,6 @@ def run_app_ml():
         st.pyplot(fig2)
 
 
-    plt.rcParams['font.family'] = 'Malgun Gothic' #그래프에 한글 출력
     data = df3.columns[2:]
     st.subheader('조건별 상관관계 분석')
     column_list =st.multiselect('상관분석 하고 싶은 컬럼을 선택하세요.',data)
