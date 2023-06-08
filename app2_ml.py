@@ -13,8 +13,12 @@ import matplotlib.font_manager as fm
 from matplotlib import font_manager, rc
 import matplotlib.pyplot as plt
 
-
-plt.rcParams['font.family'] = 'NanumGothic'
+import platform
+platform.platform()
+if platform.system() == 'Windows':
+    plt.rcParams['font.family'] = 'Malgun Gothic'
+else:
+    plt.rcParams['font.family'] = 'NanumGothic'
 
 
 def get_country_info(country_name):
