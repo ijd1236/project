@@ -238,7 +238,9 @@ def run_app_ml():
                     st.write("국기 이미지를 가져올 수 없습니다.")
             else:
                 st.write("국기 이미지를 찾을 수 없습니다.")
+            region_value = good.loc[good['Country'] == selected_country, 'Region'].values[0]    
             st.write(f"국가 이름: {country_info.get('name', '')}")
+            st.write(f"지역: {int(region_value)}")
             st.write(f"수도: {country_info.get('capital', '')}")
             st.write(f"인구: {country_info.get('population', '')}")
             st.write(f"면적: {country_info.get('area', '')} km²")
