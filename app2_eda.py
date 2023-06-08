@@ -9,9 +9,7 @@ import seaborn as sns
 from geopy.geocoders import Nominatim
 
 from matplotlib import font_manager, rc
-font_path = "C:/Windows/Fonts/NGULIM.TTF"
-font = font_manager.FontProperties(fname=font_path).get_name()
-rc('font', family=font)
+
 
 
 # df = pd.read_csv('data/Cyber_security.csv')

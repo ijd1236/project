@@ -12,9 +12,7 @@ import pandas as pd
 import plotly.express as px
 import io
 from matplotlib import font_manager, rc
-font_path = "C:/Windows/Fonts/NGULIM.TTF"
-font = font_manager.FontProperties(fname=font_path).get_name()
-rc('font', family=font)
+
 
 
 
