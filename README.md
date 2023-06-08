@@ -12,6 +12,8 @@ http://3.38.179.112:8601/
 
 ![image](https://github.com/ijd1236/project/assets/130967884/ffb86be5-5aa4-46cb-8731-dc896805e3f4)
 
+- 해당 앱 대시보드는 (app2.py, app2_eda.py, app2_home.py, app2_ml.py, app2_ml2.py에 작성했습니다)
+
 ## 앱 정보
 
 - 국가 정보를 확인하고
