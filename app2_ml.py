@@ -10,6 +10,10 @@ import folium
 import seaborn as sns
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
+from matplotlib import font_manager, rc
+font_path = "C:/Windows/Fonts/NGULIM.TTF"
+font = font_manager.FontProperties(fname=font_path).get_name()
+rc('font', family=font)
 
 
 def get_country_info(country_name):

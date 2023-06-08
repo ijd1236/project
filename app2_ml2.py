@@ -12,7 +12,10 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 import streamlit as st
 import requests
-
+from matplotlib import font_manager, rc
+font_path = "C:/Windows/Fonts/NGULIM.TTF"
+font = font_manager.FontProperties(fname=font_path).get_name()
+rc('font', family=font)
 
 
 df3 = pd.read_csv('data/df3.csv', index_col=0)
