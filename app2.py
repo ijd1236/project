@@ -19,7 +19,7 @@ from matplotlib import font_manager, rc
 def main():
     with st.sidebar:
         choose = option_menu("메뉴", ["Home", "국가 정보 검색", "자료 처리과정" ,"국가정보 분석"],
-                            icons=['house', 'bi bi-globe-asia-australia','bi bi-card-text', 'bi bi-shield-fill-check'],
+                            icons=['house', 'bi bi-globe-asia-australia','bi bi-card-text', 'bi bi-globe'],
                             menu_icon="app-indicator", default_index=0,
                             styles={
             "container": {"padding": "5!important", "background-color": "#fafafa"},
